@@ -15,7 +15,7 @@ $(document).ready(function() {
       },
 
       complete: function() {
-        
+
       },
 
       error: function(data) {
@@ -25,15 +25,20 @@ $(document).ready(function() {
       success: function(res) {
         console.log('The cats arrived!')
         console.log(res)
-        var img = '<img  src="' + res.data.image_url + '">'
-        console.log(img)
-
-        $('#gif-here').html(img)
-        $('#gif-here').hide();
-        $('#gif-here').find("img").on('load', function(){
+        if (res.data.image_url == null) {
           $('.overlay-loader').css('display', 'none')
-            $(this).closest("#gif-here").show(500);
-        });
+          $('#gif-here').html('Dafuq did you type?').show(500)
+        } else {
+          var img = '<img  src="' + res.data.image_url + '">'
+          console.log(img)
+
+          $('#gif-here').html(img)
+          $('#gif-here').hide();
+          $('#gif-here').find("img").on('load', function() {
+            $('.overlay-loader').css('display', 'none')
+            $(this).closest("#gif-here").show(500)
+          });
+        }
       }
     })
   })
