@@ -103,27 +103,6 @@ body {
   border: solid 5px #969696;
 }
 
-@media only screen and (max-width: 700px) {
-  .style-2 input[type="text"],
-  .button span {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .style-2 input[type="text"],
-  .button span {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .style-2 {
-    float: none;
-    margin: 0;
-  }
-}
-
 .content {
   position: absolute;
   width: 50%;
@@ -141,4 +120,31 @@ body {
   height: auto;
   max-height: 100%;
   max-width: 100%;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .style-2 input[type="text"],
+  .button span {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .style-2 input[type="text"],
+  .button span {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .style-2 {
+    float: none;
+    margin-top: 20px;
+    display: block;
+  }
+
+  .content {
+    top: 28%;
+  }
 }
