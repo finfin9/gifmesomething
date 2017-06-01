@@ -10,13 +10,12 @@ $(document).ready(function() {
 
       beforeSend: function() {
         $('#gif-here').slideUp('fast', function() {
-          $(this).css('display', 'none')
           $('.overlay-loader').css('display', 'block')
         })
       },
 
       complete: function() {
-        $('.overlay-loader').css('display', 'none')
+        
       },
 
       error: function(data) {
@@ -26,9 +25,15 @@ $(document).ready(function() {
       success: function(res) {
         console.log('The cats arrived!')
         console.log(res)
-        var img = '<img src="' + res.data.image_url + '">'
+        var img = '<img  src="' + res.data.image_url + '">'
         console.log(img)
-        $('#gif-here').html(img).css('display', 'block')
+
+        $('#gif-here').html(img)
+        $('#gif-here').hide();
+        $('#gif-here').find("img").on('load', function(){
+          $('.overlay-loader').css('display', 'none')
+            $(this).closest("#gif-here").show(500);
+        });
       }
     })
   })

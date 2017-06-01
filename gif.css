@@ -105,21 +105,16 @@ body {
 
 .content {
   position: absolute;
-  width: 50%;
+  width: 80%;
   left: 0;
   right: 0;
   margin: 0 auto;
   top: 20%;
+  text-align: center;
 }
 
 .content img {
-  position: relative;
-  overflow: scroll;
-  object-fit: contain;
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
+  display: inline-block;
 }
 
 
