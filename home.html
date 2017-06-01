@@ -2,31 +2,29 @@
 
 <head>
   <title>Gif Generator</title>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+  </script>
   <script src="gif.js"></script>
+  <link rel="stylesheet" href="gif.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  Keyword:
-  <input type="text" id="tag" placeholder="Optional">
-  <button id='get-gif' type="button">Show Me Something!</button>
-  <br>
-  <div style="float: left;">
-  <div id="gif-here"></div>
-
-  <div class="overlay-loader">
-    <div class="loader">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+  <div class="action-control">
+    <a class="button" id="get-gif">
+      <span>Gif Me Something</span>
+    </a>
+    <div class="style-2">
+      <input id="tag" type="text" placeholder="Keyword (Optional)">
     </div>
   </div>
+  <div class="content" id="gif-here">
+    <img src="https://www.wired.com/images_blogs/design/2013/09/1_partyanimsm2.gif">
   </div>
 </body>
 
 </html>
-
 <style>
 .overlay-loader {
   display: block;
@@ -188,3 +186,28 @@
   }
 }
 </style>
+<!--
+
+<body>
+  <a class="button">
+      <span>press me</span>
+  </a>
+  Keyword:
+  <input type="text" id="tag" placeholder="Optional">
+  <button id='get-gif' type="button">Show Me Something!</button>
+  <br>
+  <div style="float: left;">
+  <div id="gif-here"></div>
+
+  <div class="overlay-loader">
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  </div>
+</body>
+
+-->
