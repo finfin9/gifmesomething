@@ -141,6 +141,7 @@ body {
   .style-2 {
     float: none;
     margin-top: 20px;
+    margin-left: 0;
     display: block;
   }
 
