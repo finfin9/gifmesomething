@@ -104,22 +104,23 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
-  .style-2 input[type="text"] {
-    font-size: 20px;
-    /*padding: 5px;*/
-  }
+  .style-2 input[type="text"],
   .button span {
     font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .style-2 input[type="text"] {
-    font-size: 15px;
-    /*padding: 5px;*/
-  }
+  .style-2 input[type="text"],
   .button span {
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .style-2 input[type="text"],
+  .button span {
+    font-size: 12px;
   }
 }
 
