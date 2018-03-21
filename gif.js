@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('#get-gif').on('click', function(e) {
     $.ajax({
       method: 'get',
-      url: 'http://api.giphy.com/v1/gifs/random',
+      url: '//api.giphy.com/v1/gifs/random',
       data: {
         'api_key': '2jvft6DQeD1IWpEHdvrxA4jus744CxYS',
         'tag': $('input#tag').val()
