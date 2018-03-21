@@ -4,7 +4,7 @@ $(document).ready(function() {
       method: 'get',
       url: 'http://api.giphy.com/v1/gifs/random',
       data: {
-        'api_key': 'dc6zaTOxFJmzC',
+        'api_key': '2jvft6DQeD1IWpEHdvrxA4jus744CxYS',
         'tag': $('input#tag').val()
       },
 
